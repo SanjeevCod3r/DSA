@@ -1,0 +1,39 @@
+Quick Sort:
+------------
+QuickSort is a divide-and-conquer sorting algorithm that works by selecting a pivot element, 
+partitioning the array around the pivot, and recursively sorting the subarrays.
+
+1. How QuickSort Works:
+
+📍Choose a Pivot (can be the first, last, middle, or a random element).
+📍Partition the Array:
+    -> Move elements smaller than the pivot to the left.
+    -> Move elements larger than the pivot to the right.
+📍Recursively Apply QuickSort to left and right subarrays.
+
+3. Time Complexity Analysis:
+Best Case -> O(n log n)	-> When the pivot divides the array into two equal halves at each step.
+Average Case -> O(n log n) -> Most random distributions result in balanced partitions.
+Worst Case -> O(n²) -> Occurs when the smallest or largest element is always chosen as the pivot (highly unbalanced partitions).
+
+4. Space Complexity:
+-> O(log n) for recursion stack in the average case.
+-> O(n) in the worst case (if partitioning is highly unbalanced).
+
+5. Stability:
+Not stable → Relative order of equal elements may change.
+Alternative → Merge Sort is stable.
+
+6. Advantages of QuickSort:
+✅ Fast on Average – O(n log n) in most cases.
+✅ In-Place Sorting – Uses less memory than Merge Sort.
+✅ Efficient for Large Datasets – Used in real-world applications.
+
+7. Disadvantages of QuickSort:
+❌ Worst Case is O(n²) – If the pivot is poorly chosen.
+❌ Not Stable – May not preserve duplicate order.
+❌ Recursion Overhead – Can cause stack overflow for large arrays.
+
+
+
+
