@@ -71,7 +71,41 @@ Sorted: [1, 2, 5A, 5B]  ✅ (5A remains before 5B)
 ❌ Slower for small arrays → Insertion Sort is faster for small datasets
 
 
+Bubble Sort:
+-------------
+Bubble Sort is one of the simplest sorting algorithms. It repeatedly swaps adjacent elements if they are in the wrong order.
+The process continues until the array is sorted.
 
+1. How Bubble Sort Works:
+-> Start from the first element and compare it with the next element.
+-> If they are in the wrong order (i.e., arr[i] > arr[i+1]), swap them.
+-> Move to the next pair and repeat.
+-> After one full pass, the largest element will be at the end.
+-> Repeat the process for the remaining elements until the array is sorted.
+
+3. Time Complexity Analysis:
+Best Case --->	O(n) ---->	If the array is already sorted, only one pass is needed.
+Average Case ---->	O(n²) ---->	Each element is compared multiple times.
+Worst Case -----> O(n²) ----->	If the array is sorted in reverse order, maximum swaps occur.
+
+4. Space Complexity:
+O(1) → In-place sorting algorithm (does not use extra memory).
+Uses only a few extra variables for swapping.
+
+5. Stability:
+✅ Bubble Sort is stable → It maintains the relative order of duplicate elements.
+Example:
+Input:  [5A, 2, 5B, 1]
+Sorted: [1, 2, 5A, 5B]  ✅ (5A remains before 5B)
+
+6. Advantages of Bubble Sort:
+✅ Simple and easy to implement
+✅ Stable sorting algorithm
+✅ Optimized version works in O(n) for already sorted data
+
+7. Disadvantages of Bubble Sort:
+❌ Very slow for large arrays (O(n²) complexity)
+❌ Not used in real-world applications
 
 
 
