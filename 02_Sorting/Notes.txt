@@ -37,6 +37,41 @@ Alternative → Merge Sort is stable.
 
 Merge Sort:
 -----------
+Merge Sort is a divide-and-conquer sorting algorithm that recursively divides the array into two halves, 
+sorts them, and then merges them back together.
+
+1. How Merge Sort Works:
+-> Divide: Split the array into two halves until each subarray contains only one element.
+-> Conquer: Recursively sort both halves.
+-> Merge: Combine the two sorted halves into a single sorted array.
+
+3. Time Complexity Analysis:
+Best Case ----> O(n log n) ---> Recursively dividing into halves and merging
+Average Case ----> O(n log n) ---->	Works consistently for random data
+Worst Case ----> O(n log n) ----> Even if the array is sorted or in reverse order, it always divides
+
+4. Space Complexity:
+O(n) → Requires extra space for temporary arrays during merging.
+Unlike QuickSort (O(log n) space), Merge Sort is not an in-place sorting algorithm because it requires additional memory.
+
+5. Stability:
+✅ Merge Sort is stable → It preserves the relative order of equal elements.
+❌ QuickSort is unstable unless modified.
+Example:
+Input:  [5A, 2, 5B, 1]
+Sorted: [1, 2, 5A, 5B]  ✅ (5A remains before 5B)
+
+6. Advantages of Merge Sort:
+✅ Guaranteed O(n log n) time complexity
+✅ Stable sorting algorithm
+✅ Works well for large datasets and linked lists
+
+7. Disadvantages of Merge Sort:
+❌ Requires extra space (O(n)) → Not in-place sorting
+❌ Slower for small arrays → Insertion Sort is faster for small datasets
+
+
+
 
 
 
